@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小ネタ on IrushiaHomes</title>
+    <link>https://www.irushiahomes.com/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/</link>
+    <description>Recent content in 小ネタ on IrushiaHomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>COPYRIGHT © 2023-2024 IrushiaHomes</copyright>
+    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/%E5%B0%8F%E3%83%8D%E3%82%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>64チャンクで影MOD動かしてみたらｗｗ</title>
+      <link>https://www.irushiahomes.com/posts/64chnk/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/posts/64chnk/</guid>
+      <description>こんにちは！いるしあです。 まさかの23GBでびっくりしましたｗ 良さげな画像がたくさん取れたのでぜひ見ててください https://twitter.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/64chnk/featured.png" />
+    </item>
+    
+    <item>
+      <title>TwitterのURLを自動でFXtiwtterにしてくれるbot</title>
+      <link>https://www.irushiahomes.com/posts/irurl/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/posts/irurl/</guid>
+      <description>こんにちは！いるしあです！</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/irurl/featured.png" />
+    </item>
+    
+    <item>
+      <title>プロセッサ名を一時的に変更する方法</title>
+      <link>https://www.irushiahomes.com/posts/cpuname/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/posts/cpuname/</guid>
+      <description>プロセッサ名を一時的に変更する方法 # Windows+Rの組み合わせを使用してファイル名を指定して実行を開きます。 regedit.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/cpuname/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

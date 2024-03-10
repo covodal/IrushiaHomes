@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ファームウェア on IrushiaHomes</title>
+    <link>https://www.irushiahomes.com/categories/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2/</link>
+    <description>Recent content in ファームウェア on IrushiaHomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>COPYRIGHT © 2023-2024 IrushiaHomes</copyright>
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solidigm製のSSDドライバーがインストールできない問題。</title>
+      <link>https://www.irushiahomes.com/posts/solidigmdriver/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/posts/solidigmdriver/</guid>
+      <description>今回問題が起きたPC # マザーボード: Z790-S01 MSI製 CPU: 13th Gen Intel(R) Core(TM) i7-13700KF Memory: 32GB Disk: ・SSD 1TB M.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/solidigmdriver/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

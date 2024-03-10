@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ZundaMC on IrushiaHomes</title>
+    <link>https://www.irushiahomes.com/categories/zundamc/</link>
+    <description>Recent content in ZundaMC on IrushiaHomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>COPYRIGHT © 2023-2024 IrushiaHomes</copyright>
+    <lastBuildDate>Wed, 22 Nov 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/zundamc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ずんだMC Net シーズン1 ワールド配布について</title>
+      <link>https://www.irushiahomes.com/posts/zundamc-season1/</link>
+      <pubDate>Wed, 22 Nov 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/posts/zundamc-season1/</guid>
+      <description>シーズン1が終わったのでワールドを配布します。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/zundamc-season1/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
