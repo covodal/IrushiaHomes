@@ -6,16 +6,16 @@
     <description>Recent content in MacOS on IrushiaHomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <copyright>COPYRIGHT © 2023-2024 IrushiaHomes</copyright>
+    <copyright>COPYRIGHT © 2022-2024 IrushiaHomes</copyright>
     <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hackintoshを入れちゃうお話 (macOS Ventura)</title>
-      <link>https://www.irushiahomes.com/posts/opencore/</link>
+      <link>https://www.irushiahomes.com/posts/windows%E3%83%9E%E3%82%B7%E3%83%BC%E3%83%B3%E3%81%ABmacos%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://www.irushiahomes.com/posts/opencore/</guid>
+      <guid>https://www.irushiahomes.com/posts/windows%E3%83%9E%E3%82%B7%E3%83%BC%E3%83%B3%E3%81%ABmacos%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
       <description>構成と使用したツール # CPU: インテル® Core™ i7-10750H GPU: Intel UHD Graphics モデル: GP75-10SFK-009JP OS: MacOS Ventura LAN: Realtek RTL8111HS ドライバーが存在しないため、今回はNVIDIAのGPUを使用せずに進めていく。 【使用ツール】 # UEFI: OpenCore</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/opencore/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://www.irushiahomes.com/posts/windows%E3%83%9E%E3%82%B7%E3%83%BC%E3%83%B3%E3%81%ABmacos%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/featured.png" />
     </item>
     
   </channel>
