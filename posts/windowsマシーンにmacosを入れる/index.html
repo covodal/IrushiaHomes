@@ -84,7 +84,7 @@
     "name": "Hackintoshを入れちゃうお話 (macOS Ventura)",
     "headline": "Hackintoshを入れちゃうお話 (macOS Ventura)",
     "description": "hackintosh(OpenCore)",
-    "abstract": "構成と使用したツール # CPU: インテル® Core™ i7-10750H GPU: Intel UHD Graphics モデル: GP75-10SFK-009JP OS: MacOS Ventura LAN: Realtek RTL8111HS ドライバーが存在しないため、今回はNVIDIAのGPUを使用せずに進めていく。 【使用ツール】 # UEFI: OpenCore",
+    "abstract": "PC構成 # CPU: インテル® Core™ i7-10750H GPU: Intel UHD Graphics モデル: GP75-10SFK-009JP OS: MacOS Ventura LAN: Realtek RTL8111HS ドライバーが存在しないため、今回はNVIDIAのGPUを使用せずに進めていく。 【使用したツール】 # UEFI: OpenCore https:\/\/dortania.",
     "inLanguage": "ja",
     "url" : "https:\/\/www.irushiahomes.com\/posts\/windows%E3%83%9E%E3%82%B7%E3%83%BC%E3%83%B3%E3%81%ABmacos%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B\/",
     "author" : {
@@ -100,7 +100,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "78"
+    "wordCount": "82"
   }]
   </script>
 
@@ -862,12 +862,24 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#構成と使用したツール"><strong>構成と使用したツール</strong></a></li>
-    <li><a href="#使用ツール">【使用ツール】</a></li>
-    <li><a href="#1mac-osを手に入れる">1.Mac OSを手に入れる</a></li>
-    <li><a href="#2usbに書き込む">2.USBに書き込む</a></li>
-    <li><a href="#5インストールの準備をする">5.インストールの準備をする。</a></li>
-    <li><a href="#6mac-osのブートローダーにopencoreをインストールする">6.Mac OSのブートローダーにOpenCoreをインストールする</a></li>
+    <li><a href="#pc構成"><strong>PC構成</strong></a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#使用したツール">【使用したツール】</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#1mac-osを手に入れる">1.Mac OSを手に入れる</a>
+      <ul>
+        <li><a href="#2usbに書き込む">2.USBに書き込む</a></li>
+        <li><a href="#3efiの書き換え">3.EFIの書き換え</a></li>
+        <li><a href="#4-biosの設定をいじる">4. BIOSの設定をいじる</a></li>
+        <li><a href="#5インストールの準備をする">5.インストールの準備をする。</a></li>
+        <li><a href="#6mac-osのブートローダーにopencoreをインストールする">6.Mac OSのブートローダーにOpenCoreをインストールする</a></li>
+      </ul>
+    </li>
     <li><a href="#おわりに">おわりに</a></li>
   </ul>
 </nav>
@@ -882,12 +894,24 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#構成と使用したツール"><strong>構成と使用したツール</strong></a></li>
-    <li><a href="#使用ツール">【使用ツール】</a></li>
-    <li><a href="#1mac-osを手に入れる">1.Mac OSを手に入れる</a></li>
-    <li><a href="#2usbに書き込む">2.USBに書き込む</a></li>
-    <li><a href="#5インストールの準備をする">5.インストールの準備をする。</a></li>
-    <li><a href="#6mac-osのブートローダーにopencoreをインストールする">6.Mac OSのブートローダーにOpenCoreをインストールする</a></li>
+    <li><a href="#pc構成"><strong>PC構成</strong></a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#使用したツール">【使用したツール】</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#1mac-osを手に入れる">1.Mac OSを手に入れる</a>
+      <ul>
+        <li><a href="#2usbに書き込む">2.USBに書き込む</a></li>
+        <li><a href="#3efiの書き換え">3.EFIの書き換え</a></li>
+        <li><a href="#4-biosの設定をいじる">4. BIOSの設定をいじる</a></li>
+        <li><a href="#5インストールの準備をする">5.インストールの準備をする。</a></li>
+        <li><a href="#6mac-osのブートローダーにopencoreをインストールする">6.Mac OSのブートローダーにOpenCoreをインストールする</a></li>
+      </ul>
+    </li>
     <li><a href="#おわりに">おわりに</a></li>
   </ul>
 </nav>
@@ -934,13 +958,13 @@
 </p>
 
 
-<h2 class="relative group"><strong>構成と使用したツール</strong> 
-    <div id="%E6%A7%8B%E6%88%90%E3%81%A8%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%83%84%E3%83%BC%E3%83%AB" class="anchor"></div>
+<h2 class="relative group"><strong>PC構成</strong> 
+    <div id="pc%E6%A7%8B%E6%88%90" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%A7%8B%E6%88%90%E3%81%A8%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%83%84%E3%83%BC%E3%83%AB" aria-label="アンカー">#</a>
+            style="text-decoration-line: none !important;" href="#pc%E6%A7%8B%E6%88%90" aria-label="アンカー">#</a>
     </span>        
     
 </h2>
@@ -953,31 +977,31 @@ LAN: Realtek RTL8111HS
 <p>ドライバーが存在しないため、今回はNVIDIAのGPUを使用せずに進めていく。<p>
 
 
-<h2 class="relative group">【使用ツール】 
-    <div id="%E4%BD%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB" class="anchor"></div>
+<h4 class="relative group">【使用したツール】 
+    <div id="%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%83%84%E3%83%BC%E3%83%AB" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BD%BF%E7%94%A8%E3%83%84%E3%83%BC%E3%83%AB" aria-label="アンカー">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%83%84%E3%83%BC%E3%83%AB" aria-label="アンカー">#</a>
     </span>        
     
-</h2>
-<p>UEFI: OpenCore<br>
-<a href="https://dortania.github.io/OpenCore-Install-Guide"   target="_blank">
-    https://dortania.github.io/OpenCore-Install-Guide</a></p>
-<p>balenaEtcher:<br>
-<a href="https://etcher.balena.io/"   target="_blank">
-    https://etcher.balena.io/</a></p>
-<p>MiniTool Partition Wizard:<br>
-<a href="https://www.partitionwizard.com/free-partition-manager.html"   target="_blank">
-    https://www.partitionwizard.com/free-partition-manager.html</a></p>
-<p>Explorer++:<br>
-<a href="https://explorerplusplus.com/download"   target="_blank">
-    https://explorerplusplus.com/download</a></p>
-<p>Opencore EFI File:<br>
-<a href="https://www.olarila.com/topic/5676-hackintosh-efi-folder-with-clover-and-opencore/"   target="_blank">
-    https://www.olarila.com/topic/5676-hackintosh-efi-folder-with-clover-and-opencore/</a></p>
+</h4>
+<pre><code>UEFI: OpenCore  
+https://dortania.github.io/OpenCore-Install-Guide
+
+balenaEtcher:  
+https://etcher.balena.io/
+
+MiniTool Partition Wizard:  
+https://www.partitionwizard.com/free-partition-manager.html
+
+Explorer++:  
+https://explorerplusplus.com/download
+
+Opencore EFI File:  
+https://www.olarila.com/topic/5676-hackintosh-efi-folder-with-clover-and-opencore/
+</code></pre>
 
 
 <h2 class="relative group">1.Mac OSを手に入れる 
@@ -996,7 +1020,7 @@ LAN: Realtek RTL8111HS
 今回は配布されているものを代理として使用する。</p>
 
 
-<h2 class="relative group">2.USBに書き込む 
+<h3 class="relative group">2.USBに書き込む 
     <div id="2usb%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80" class="anchor"></div>
     
     <span
@@ -1005,7 +1029,7 @@ LAN: Realtek RTL8111HS
             style="text-decoration-line: none !important;" href="#2usb%E3%81%AB%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80" aria-label="アンカー">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>balenaEtcherを使用して、MacOSのインストールメディアを作成<p>
 <p>
 
@@ -1035,7 +1059,18 @@ LAN: Realtek RTL8111HS
   
 
 </p>
-<p>3.EFIの書き換え</p>
+
+
+<h3 class="relative group">3.EFIの書き換え 
+    <div id="3efi%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3efi%E3%81%AE%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88" aria-label="アンカー">#</a>
+    </span>        
+    
+</h3>
 <p>配布されているものにはOpenCoreが含まれていないので、MiniTool Partition Wizardを使用してマウントする。<p>
 <p>
 
@@ -1094,10 +1129,18 @@ LAN: Realtek RTL8111HS
 
 </p>
 <p>すべて削除して、中身を置き換える。<p>
-<ol start="4">
-<li>BIOSの設定をいじる</li>
-</ol>
-<hr>
+
+
+<h3 class="relative group">4. BIOSの設定をいじる 
+    <div id="4-bios%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%84%E3%81%98%E3%82%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-bios%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E3%81%84%E3%81%98%E3%82%8B" aria-label="アンカー">#</a>
+    </span>        
+    
+</h3>
 <p>CMSとかセキュアブートとか、いらんお世話なものがついていると起動に失敗するためそれらをOFFにする</p>
 <p>
 
@@ -1129,7 +1172,7 @@ LAN: Realtek RTL8111HS
 </p>
 
 
-<h2 class="relative group">5.インストールの準備をする。 
+<h3 class="relative group">5.インストールの準備をする。 
     <div id="5%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AE%E6%BA%96%E5%82%99%E3%82%92%E3%81%99%E3%82%8B" class="anchor"></div>
     
     <span
@@ -1138,7 +1181,7 @@ LAN: Realtek RTL8111HS
             style="text-decoration-line: none !important;" href="#5%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AE%E6%BA%96%E5%82%99%E3%82%92%E3%81%99%E3%82%8B" aria-label="アンカー">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>日本語にしたら、ディスクユーティリティーからDiskを作成して
 Mac OS Extended形式で作成する。
 終わったらWindowsと同じようにインストールをして進める。</p>
@@ -1163,34 +1206,6 @@ Mac OS Extended形式で作成する。
         /uploads/2023/11/599367695_hu7dbe2d8f6f40434e3c427da80bcc50ce_60428_1320x0_resize_box_3.png 2x"
         src="/uploads/2023/11/599367695_hu7dbe2d8f6f40434e3c427da80bcc50ce_60428_660x0_resize_box_3.png"
         alt="2023-11-17T19:22:25.png"
-      />
-      
-      
-    </figure>
-  
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        srcset="
-        /uploads/2023/11/2341077164_hu7c455db8c26e8fcf65a2541ea9f42e0d_55594_330x0_resize_box_3.png 330w,
-        /uploads/2023/11/2341077164_hu7c455db8c26e8fcf65a2541ea9f42e0d_55594_660x0_resize_box_3.png 660w,
-        /uploads/2023/11/2341077164_hu7c455db8c26e8fcf65a2541ea9f42e0d_55594_1024x0_resize_box_3.png 1024w,
-        /uploads/2023/11/2341077164_hu7c455db8c26e8fcf65a2541ea9f42e0d_55594_1320x0_resize_box_3.png 2x"
-        src="/uploads/2023/11/2341077164_hu7c455db8c26e8fcf65a2541ea9f42e0d_55594_660x0_resize_box_3.png"
-        alt="2023-11-17T19:23:12.png"
       />
       
       
@@ -1256,7 +1271,7 @@ Mac OS Extended形式で作成する。
 </p>
 
 
-<h2 class="relative group">6.Mac OSのブートローダーにOpenCoreをインストールする 
+<h3 class="relative group">6.Mac OSのブートローダーにOpenCoreをインストールする 
     <div id="6mac-os%E3%81%AE%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%ABopencore%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B" class="anchor"></div>
     
     <span
@@ -1265,7 +1280,7 @@ Mac OS Extended形式で作成する。
             style="text-decoration-line: none !important;" href="#6mac-os%E3%81%AE%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%ABopencore%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B" aria-label="アンカー">#</a>
     </span>        
     
-</h2>
+</h3>
 <p>現状だとUSBがないと起動できないためシステム領域にOPENCOREをインストールします。
 そのため、ブータブルUSBのEFIフォルダを、SSDのEFIパーティションにコピーする必要があります。
 Opencore Configuratorを使用してEFI領域をマウントします。</p>
@@ -1284,8 +1299,8 @@ Opencore Configuratorを使用してEFI領域をマウントします。</p>
     </span>        
     
 </h2>
-<p>AppleがIntelを打ち切ってしまったため、MacOSが使えないという方もいらっしゃったのではないでしょうか？
-皆様の参考になれば幸いです。
+<p>AppleがIntelを打ち切ってしまったため、MacOSが使えないという方も<br>いらっしゃったのではないでしょうか？
+皆様の参考になれば幸いです。<br>
 次回は、Mac OSの起動音。じゃ～んを鳴らせるようにする予定です。</p>
 <blockquote>
 <p>ソース元<br>
