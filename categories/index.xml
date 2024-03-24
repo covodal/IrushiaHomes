@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>COPYRIGHT © 2022-2024 IrushiaHomes</copyright>
-    <lastBuildDate>Fri, 22 Mar 2024 22:10:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Mar 2024 00:00:00 +0900</lastBuildDate><atom:link href="https://www.irushiahomes.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Origin</title>
-      <link>https://www.irushiahomes.com/categories/origin/</link>
-      <pubDate>Fri, 22 Mar 2024 22:10:00 +0900</pubDate>
+      <title>Chrome</title>
+      <link>https://www.irushiahomes.com/categories/chrome/</link>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0900</pubDate>
       
-      <guid>https://www.irushiahomes.com/categories/origin/</guid>
+      <guid>https://www.irushiahomes.com/categories/chrome/</guid>
       <description></description>
       
     </item>
@@ -21,9 +21,19 @@
     <item>
       <title>Software</title>
       <link>https://www.irushiahomes.com/categories/software/</link>
-      <pubDate>Fri, 22 Mar 2024 22:10:00 +0900</pubDate>
+      <pubDate>Mon, 25 Mar 2024 00:00:00 +0900</pubDate>
       
       <guid>https://www.irushiahomes.com/categories/software/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Origin</title>
+      <link>https://www.irushiahomes.com/categories/origin/</link>
+      <pubDate>Fri, 22 Mar 2024 22:10:00 +0900</pubDate>
+      
+      <guid>https://www.irushiahomes.com/categories/origin/</guid>
       <description></description>
       
     </item>
